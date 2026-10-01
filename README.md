@@ -2,17 +2,31 @@
   <img src="banner.png" alt="IP-Conversion Banner" width="100%">
 </p>
 
+<div align="center">
+  
 # 🌐 IP & Subnet Calculator for Cisco Packet Tracer
+
+</div>
 
 A production-ready, modular Python CLI utility designed to automate subnet calculations, IP conversions, and network boundary analysis. This tool was engineered specifically to streamline network design, VLSM mapping, and configuration workflows inside **Cisco Packet Tracer**.
 
 
+<div align="center">
+  
 ## 🎯 The Core Problem & Solution
+
+</div>
+
 * **The Problem:** Configuring routers, switches, and access control lists (ACLs) in **Cisco Packet Tracer** requires constant calculation of subnet boundaries. Manually performing bitwise AND operations, converting masks to binary to find host bits, and calculating exact usable ranges is slow, tedious, and prone to mistakes during lab sessions or CCNA exams.
 * **The Solution:** This utility automates the entire subnetting lifecycle. By entering a host IP and a Subnet Mask, the script instantly evaluates the binary structure, isolates the true network address, maps usable host ranges, and logs the results.
 
 
+<div align="center">
+  
 ## 🛠️ Key Features & Capabilities
+
+</div>
+
 The application processes raw network data dynamically to output complete diagnostics:
 * **Bidirectional Binary Parsing:** Converts standard IPv4 dot-decimal inputs into structured, 8-bit padded binary streams.
 * **Automated Host Calculation:** Analyzes subnet mask zeros to compute the maximum number of assignable IP addresses (\(2^n - 2\)).
@@ -21,7 +35,11 @@ The application processes raw network data dynamically to output complete diagno
 * **Persistent History Logging:** Automatically appends every calculation log into an `outputdata.txt` file for easy copying into Cisco IOS device configuration notes.
 
 
+<div align="center">
+  
 ## 📂 Code Architecture
+
+</div>
 
 The project follows a clean, modular design separating the core engine, presentation layer, and file I/O operations to maintain the *Single Responsibility Principle*:
 
@@ -39,7 +57,11 @@ IP-Conversion/
 ```
 
 
+<div align="center">
+  
 ## 🚀 How to Run Locally
+
+</div>
 
 1. Clone the repository:
    ```bash
@@ -56,7 +78,11 @@ IP-Conversion/
 4. Access your dynamic network log history inside: `outputdata.txt`
 
 
+<div align="center">
+  
 ## 📈 Changelog & Version History
+
+</div>
 
 ### 🟢 Version 1.0 (Current Stable)
 * **Add:** Automated dynamic backup system (Saves all output text analysis to a local text file).
