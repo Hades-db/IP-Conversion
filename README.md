@@ -6,11 +6,11 @@
 
 A production-ready, modular Python CLI utility designed to automate subnet calculations, IP conversions, and network boundary analysis. This tool was engineered specifically to streamline network design, VLSM mapping, and configuration workflows inside **Cisco Packet Tracer**.
 
+
 ## 🎯 The Core Problem & Solution
 * **The Problem:** Configuring routers, switches, and access control lists (ACLs) in **Cisco Packet Tracer** requires constant calculation of subnet boundaries. Manually performing bitwise AND operations, converting masks to binary to find host bits, and calculating exact usable ranges is slow, tedious, and prone to mistakes during lab sessions or CCNA exams.
 * **The Solution:** This utility automates the entire subnetting lifecycle. By entering a host IP and a Subnet Mask, the script instantly evaluates the binary structure, isolates the true network address, maps usable host ranges, and logs the results.
 
----
 
 ## 🛠️ Key Features & Capabilities
 The application processes raw network data dynamically to output complete diagnostics:
@@ -20,7 +20,6 @@ The application processes raw network data dynamically to output complete diagno
 * **Boundary Mapping:** Instantly calculates the **First Usable IP**, **Last Usable IP**, and the **Broadcast Address**.
 * **Persistent History Logging:** Automatically appends every calculation log into an `outputdata.txt` file for easy copying into Cisco IOS device configuration notes.
 
----
 
 ## 📂 Code Architecture
 
@@ -39,7 +38,6 @@ IP-Conversion/
     └── ui.py
 ```
 
----
 
 ## 🚀 How to Run Locally
 
@@ -57,7 +55,6 @@ IP-Conversion/
    ```
 4. Access your dynamic network log history inside: `outputdata.txt`
 
----
 
 ## 📈 Changelog & Version History
 
